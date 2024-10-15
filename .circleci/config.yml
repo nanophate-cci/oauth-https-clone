@@ -9,5 +9,6 @@ jobs:
       - image: cimg/base:current
     steps:
       - gh/setup
+      - run: gh repo clone "$PARAM_GITHUB_REPO_EXPANDED"
       - gh/clone
       - run: ls -la
