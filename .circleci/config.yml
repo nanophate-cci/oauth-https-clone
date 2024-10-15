@@ -9,6 +9,6 @@ jobs:
       - image: cimg/base:current
     steps:
       - gh/setup
-      - run: gh repo clone "$PARAM_GITHUB_REPO_EXPANDED"
+      - run: gh repo clone github.com/"$CIRCLE_PROJECT_USERNAME"/"$CIRCLE_PROJECT_REPONAME"
       - gh/clone
       - run: ls -la
