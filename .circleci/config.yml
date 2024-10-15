@@ -10,5 +10,4 @@ jobs:
     steps:
       - gh/setup
       - run: gh repo clone github.com/"$CIRCLE_PROJECT_USERNAME"/"$CIRCLE_PROJECT_REPONAME"
-      - gh/clone
       - run: ls -la
